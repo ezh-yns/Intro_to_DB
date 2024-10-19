@@ -33,6 +33,6 @@ CREATE TABLE Order_detail (
     order_id INT(3),
     book_id INT(3),
      quantity DOUBLE(8, 2)
-    FOREIGN KEY (order_id) REFERENCES Oustomers(order_id),
+    FOREIGN KEY (order_id) REFERENCES Orders(order_id),
     FOREIGN KEY (book_id) REFERENCES Books(book_id),
 )
